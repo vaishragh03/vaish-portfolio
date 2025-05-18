@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Vaishnavi Raghavan</title>
+    <link href="styles.css" rel="stylesheet">
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script> 
+
+</head>
+<body>
+  <div class="floating-notes gradiented-para">🎶</div>
+  <div id="glow" class="cursor-glow"></div>
+  <div id="progressBar" class="fixed top-0 left-0 h-1 bg-purple-500 z-50"></div>
+  <button id="modeToggle" class="fixed top-4 right-4 bg-gray-800 text-white px-3 py-2 rounded">🌗
+  </button>
+
+    <!-- TailwindCSS Navbar -->
+<nav class="trans-bckgrd shadow-md">
+  <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+ 
+    <!-- Logo / Brand -->
+    <div class="flex items-center space-x-2">
+
+      
+      <img src="https://cdn-icons-png.flaticon.com/512/727/727218.png" alt="music" class="w-8 h-8">
+      <a class="text-xl font-bold text-white-900  tracking-wide" href="https://drive.google.com/file/d/1oNd5xm6Hh88TPoGh_ct75LZVsJWHjXOe/view?usp=sharing" target="_blank">VR 🎶</h1>
+        
+    </div>
+
+
+    <!-- Desktop Links -->
+    <ul class="hidden md:flex space-x-6 text-white dark:text-white font-medium">
+
+
+      <li><a href="#home" class="hover:text-white-900">Home</a></li>
+      <li><a href="#about" class="hover:text-white-900">About</a></li>
+      <li><a href="#recordings" class="hover:text-white-900">Recordings</a></li>
+      <li><a href="#projects" class="block text-white-900">Projects</a></li>
+      <li><a href="#contact" class="hover:text-white-900">Contact</a></li>
+    </ul>
+
+    <!-- Mobile Menu Toggle -->
+    <div class="md:hidden">
+      <button id="menu-btn" class="text-white-900 focus:outline-none text-2xl">☰</button>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+
+  <div id="mobile-menu" class="hidden md:hidden bg-white-50 px-4 py-2 space-y-2">
+    <a href="#home" class="block text-white-900">Home</a>
+    <a href="#about" class="block text-white-900">About</a>
+    <a href="#recordings" class="block text-white-900">Recordings</a>
+    <a href="#projects" class="block text-white-900">Projects</a>
+    <a href="#contact" class="block text-white-900">Contact</a>
+  </div>
+</nav>
+
+<!-- Toggle Script -->
+<script>
+  const menuBtn = document.getElementById('menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  menuBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+</script>
+
+    <div class="landing-bg-image">
+        <!-- Code Editor -->
+               
+           <!-- Terminal Typing Section -->
+    <section class="bg-gray-900 text-green-400 font-mono px-6 py-4 md:px-12 top-20 left-0 z-40 w-full max-w-xl shadow">
+        <div class="rounded-lg p-4 shadow-lg border border-green-400">
+          <code id="typedText" class="text-lg leading-relaxed">
+            <!-- Animated text will appear here -->
+          </code>
+        </div>
+    </section>
+
+<!-- Typing Script -->
+<script>
+  const text = `<h1>Hi, I'm Vaish 👩‍💻</h1>\n<p>Web Developer & Vocalist</p>`;
+  const typedText = document.getElementById('typedText');
+  let index = 0;
+
+  function typeChar() {
+    if (index < text.length) {
+      typedText.textContent += text.charAt(index);
+      index++;
+      setTimeout(typeChar, 60); // Adjust speed here
+    }
+  }
+
+  window.addEventListener('DOMContentLoaded', typeChar);
+</script>
+
+
+        <section class="h-screen outlined flex flex-col  justify-center items-center text-white text-center">
+            <h1 class="text-5xl font-bold  text-white linear-gradient-to-r from-purple-600 to-pink-400">VAISHNAVI RAGHAVAN</h1>
+
+            <p class="mt-4 text-xl  font-bold gradiented-para">Web Developer by Day, Passionate Vocalist by Soul! 🎶</p>
+            <a href="#about" class="mt-6 bg-white text-purple-600 bg-pink  px-6 py-3 rounded-full font-semibold">Explore My Story</a>
+        </section>
+    </div>
+    
+    <div class="about-bg-image">
+        <section id="about" class="container py-5 flex-wrap">
+          <div class="row">
+            <div>
+              <h2 class="text-3xl text-black font-bold text-center mb-4">ABOUT ME</h2>
+              <div class="d-flex flex-row m-auto">
+                <img src="images/Professional Pic.jpg" alt="Profile Picture" class="rounded-lg w-48 md:w-64 mx-auto md:mx-0 shadow-lg">
+                <p class="p-5 para text-xl text-black-800 font-bold">I'm Vaishnavi Raghavan— a dedicated web developer and passionate vocalist. To me, both coding and singing are powerful ways to tell stories; coding creates interactive experiences that connect people, while singing expresses emotion and soul. This portfolio is a blend of my two worlds, showcasing how technology and music come together to reflect who I am. It's a place where my skills and passions intersect, revealing my creativity, dedication, and love for both art and science. As you explore, you'll see how I bring my unique perspective and energy to each project and performance.</p>
+                
+              </div>   
+            </div>
+            
+            <div class="col-md-6 mt-5 m-auto">
+
+                <h2 class="text-3xl text-black font-bold">Web Developer & Designer</h2>
+                <p class=" mt-3 para text-xl text-#333333 font-bold">I build beautiful, functional websites & love solving UI/UX problems...</p>
+                <ul class="text-xl mt-3 para text-#333333 font-bold ulist">
+                  <li>Passionate about crafting user interfaces that speak to people.</li>
+
+                  <li>Proficient in HTML, CSS, JavaScript, Bootstrap, and Tailwind CSS.</li>
+
+                  <li>Currently learning new frameworks and continuously experimenting with UI/UX designs.</li>
+
+                  <li>Love to turn ideas into clean, responsive, and engaging websites.</li>
+                </ul>
+            </div>
+            
+            
+            
+            <div class="col-md-6 mt-5 m-auto">
+                <h2 class="text-3xl text-black font-bold">Passionate Vocalist</h2>
+                <p class="text-xl mt-3 para text-#333333 font-bold">I’ve been exploring my voice as an Vocal learner, recording covers, learning styles...</p>
+                <ul class="text-xl mt-3 para text-#333333 font-bold ulist">
+                  <li>Trained vocalist with a heart rooted in melody and rhythm.</li>
+
+                  <li>I enjoy experimenting with vocal styles and recording soulful renditions.</li>
+
+                  <li>Music is my emotional language, and I believe every voice has a story.</li>
+
+                  <li>I’m currently exploring fusion, classical, and cinematic vocals.</li>
+                </ul>
+            </div>
+          </div>
+        </section>
+      
+
+        <section id="recordings" class="p-8 object-cover">
+          <h2 class="text-3xl text-center font-bold mb-3">🎵 My Recordings</h2>
+          <p class="text-xl text-center font-semibold mb-6">Here are some of my cover song audio and video recordings of different genres from Tamil music industry!</p>
+          <div>
+            <h3 class="text-3xl text-center font-bold mb-6">Audio Recordings</h3>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-4 m-5 ">
+              
+                <div class="col card bg-black rounded-xl shadow-md overflow-hidden transform transition duration-500 hover:scale-105 hover:shadow-2xl hover:pulse">
+                    <img class="bg-img" src="images/alai kadal.jpg" class="card-img-top m-auto" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title text-white">Alai Kadal - Ponniyin Selvan 2</h5>
+                      <audio controls src="audios/Alai Kadal.mp3" class="bg-black mb-3 m-auto w-100 p-auto"></audio>
+                    </div>  
+                </div>
+                <div class="col card bg-black rounded-xl shadow-md overflow-hidden transform transition duration-500 hover:scale-105 hover:shadow-2xl hover:pulse">
+                    <img class="bg-img" src="images/annul mele.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title text-white">Annul Mele - Varanam Aayiram</h5>
+                      <audio controls src="audios/Annul mele song.mp3" class="bg-black mb-3 m-auto w-100 p-auto"></audio>
+                    </div>  
+                </div>
+                <div class="col card bg-black rounded-xl shadow-md overflow-hidden transform transition duration-500 hover:scale-105 hover:shadow-2xl hover:pulse">
+                    <img class="bg-img" src="images/enachu edhachu.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title text-white">Enachu yedachu - Trisha Illana Nayanthara </h5>
+                      <audio controls src="audios/Enachu yedachu song.mp3" class="bg-black mb-3 m-auto w-100 p-auto"></audio>
+                    </div>  
+                </div>
+                <div class="col card bg-black rounded-xl shadow-md overflow-hidden transform transition duration-500 hover:scale-105 hover:shadow-2xl hover:pulse">
+                    <img class="bg-img" src="images/enadhuyire.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title text-white">Enadhuyire - Bheema</h5>
+                      <audio controls src="audios/Enadhuyire.mp3" class="bg-black mb-3 m-auto w-100 p-auto"></audio>
+                    </div>  
+                </div>
+                <div class="col card bg-black rounded-xl shadow-md overflow-hidden transform transition duration-500 hover:scale-105 hover:shadow-2xl hover:pulse">
+                    <img class="bg-img" src="images/enna solla pogirai.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title text-white">Enna solla pogirai - Kandukonden kandukonden </h5>
+                      <audio controls src="audios/Enna solla pogirai.mp3" class="bg-black mb-3 m-auto w-100 p-auto"></audio>
+                    </div>  
+                </div>
+                <div class="col card bg-black rounded-xl shadow-md overflow-hidden transform transition duration-500 hover:scale-105 hover:shadow-2xl hover:pulse">
+                    <img class="bg-img" src="images/kadhal vaithu.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title text-white">Kadhal vaithu - Deepavali</h5>
+                      <audio controls src="audios/Kadhal vaithu song.mp3" class="bg-black mb-3 m-auto w-100 p-auto"></audio>
+                    </div>  
+                </div>
+                <div class="col card bg-black rounded-xl shadow-md overflow-hidden transform transition duration-500 hover:scale-105 hover:shadow-2xl hover:pulse">
+                    <img class="bg-img" src="images/MAlai mangum neram.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title text-white">Malai mangum neram -  Rowthiram</h5>
+                      <audio controls src="audios/Malai mangum neram.mp3" class="bg-black mb-3 m-auto w-100 p-auto"></audio>
+                    </div>  
+                </div>
+                <div class="col card bg-black rounded-xl shadow-md overflow-hidden transform transition duration-500 hover:scale-105 hover:shadow-2xl hover:pulse">
+                    <img class="bg-img" src="images/Manasellam mazhaiye.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title text-white">Manasellam mazhaiye - Saguni</h5>
+                      <audio controls src="audios/Manasellam mazhaiye.mp3" class="bg-black mb-3 m-auto w-100 p-auto"></audio>
+                    </div>  
+                </div>
+                <div class="col card bg-black rounded-xl shadow-md overflow-hidden transform transition duration-500 hover:scale-105 hover:shadow-2xl hover:pulse">
+                    <img class="bg-img" src="images/Marudhani.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title text-white">Marudhani - Sakkarakatti </h5>
+                      <audio controls src="audios/Marudhani song.mp3" class="bg-black mb-3 m-auto w-100 p-auto"></audio>
+                    </div>  
+                </div>
+                <div class="col card bg-black rounded-xl shadow-md overflow-hidden transform transition duration-500 hover:scale-105 hover:shadow-2xl hover:pulse">
+                    <img class="bg-img" src="images/kanna veesi.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title text-white">Kanna Veesi - Album </h5>
+                      <audio controls src="audios/Muzhusa unakena song.mp3" class="bg-black mb-3 m-auto w-100 p-auto"></audio>
+                    </div>  
+                </div>
+                <div class="col card bg-black rounded-xl shadow-md overflow-hidden transform transition duration-500 hover:scale-105 hover:shadow-2xl hover:pulse">
+                    <img class="bg-img" src="images/Naru Narumagaye.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title text-white">Naru Narumugaye - Sundattam</h5>
+                      <audio controls src="audios/Narumugaye.mp3" class="bg-black mb-3 m-auto w-100 p-auto"></audio>
+                    </div>  
+                </div>
+                <div class="col card bg-black rounded-xl shadow-md overflow-hidden transform transition duration-500 hover:scale-105 hover:shadow-2xl hover:pulse">
+                    <img class="bg-img" src="images/Patha vekkum pravai kara.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title text-white">Patha vaikum parvai kara - Devara</h5>
+                      <audio controls src="audios/Patha vaikum parvai kara👀.mp3" class="bg-black mb-3 m-auto w-100 p-auto"></audio>
+                    </div>  
+                </div>
+                <div class="col card bg-black rounded-xl shadow-md overflow-hidden transform transition duration-500 hover:scale-105 hover:shadow-2xl hover:pulse">
+                    <img class="bg-img" src="images/pothavillaye.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title text-white">Pothavillaye - Mudinja Ivana Pudi</h5>
+                      <audio controls src="audios/Pothavillaye.mp3" class="bg-black mb-3 m-auto w-100 p-auto"></audio>
+                    </div>  
+                </div>
+                <div class="col card bg-black rounded-xl shadow-md overflow-hidden transform transition duration-500 hover:scale-105 hover:shadow-2xl hover:pulse">
+                    <img class="bg-img" src="images/Un perai solyumpothe.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title text-white">Un perai solumpothe - Angadi Theru</h5>
+                      <audio controls src="audios/Un perai solumpothe.mp3" class="bg-black mb-3 m-auto w-100 p-auto"></audio>
+                    </div>  
+                </div>
+                
+                <div class="col card bg-black rounded-xl shadow-md overflow-hidden transform transition duration-500 hover:scale-105 hover:shadow-2xl hover:pulse">
+                    <img class="bg-img" src="images/vaseegara.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title text-white">Vaseegara - Minnale</h5>
+                      <audio controls src="audios/Vaseegara song.mp3" class="bg-black mb-3 m-auto w-100 p-auto"></audio>
+                    </div>  
+                </div>
+                <div class="col card bg-black rounded-xl shadow-md overflow-hidden transform transition duration-500 hover:scale-105 hover:shadow-2xl hover:pulse">
+                    <img class="bg-img"  src="images/mashup.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title text-white">Vizhi moodi Ｘ Yedho ondru - Mashup</h5>
+                      <audio controls src="audios/Vizhi moodi Ｘ Yedho ondru.mp3" class="bg-black mb-3 m-auto w-100 p-auto"></audio>
+                    </div>  
+                </div>  
+            </div>  
+          </div>
+
+            <h3 class="text-3xl text-center font-bold mb-6">Video Recordings</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 m-5">
+                <video controls class="video">
+                  <source src="videos/VID_20250117_195203(0).mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+                <video controls class="video">
+                  <source src="videos/VID_20240609_192439(0).mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+                <video controls class="video">
+                  <source src="videos/VID_20250122_155850(0).mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+                <video controls class="video">
+                  <source src="videos/VID_20240609_185421(0).mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+                <video controls class="video">
+                  <source src="videos/VID_20241115_200955(0).mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+                <video controls class="video">
+                  <source src="videos/VID_20241122_201247.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+                          
+            </div>
+          
+        </section>
+
+        <section id="projects" class="p-8 outlined">
+          <h2 class="text-3xl text-center font-bold mb-3">Projects 💻</h2>
+          <p class="text-xl text-center font-semibold mb-6">Here are some of my projects that I developed!</p>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-5 m-5">
+          <div class="col bg rounded-xl shadow-md overflow-hidden transform transition duration-500 hover:scale-105 hover:shadow-2xl hover:bg-purple-50 hover:pulse">
+              <img class="w-full h-48 object-cover" src="images/library pic.jpg" alt="Library Project Preview">
+              <div class="p-6">
+                <h2 class="text-2xl font-bold text-purple-700 mb-2">Library Management Web App</h2>
+                <p class="text-gray-600 text-sm mb-4">
+                   A Digital Organizer for Book Enthusiasts. A dynamic web app to manage book listings, user operations, and availability status in a virtual library.
+                </p>
+                <ul class="list-disc ml-5 mt-2 text-gray-600">
+                  <li>Used by librarians and students</li>
+                  <li>Built with HTML, CSS, JS</li>
+                  <li>Interactive card-based layout</li>
+                </ul>
+                <div class="flex justify-between items-center">
+                  <a href="https://libmngment.ccbp.tech/" class="text-indigo-500 hover:text-indigo-700 font-semibold">🔗 View Live</a>
+                  <a href="https://github.com/vaishragh03" class="text-gray-600 hover:text-black font-semibold">💻 GitHub</a>
+                </div>
+              </div>
+          </div>
+
+          <div class="col bg rounded-xl shadow-md overflow-hidden transform transition duration-500 hover:scale-105 hover:shadow-2xl hover:bg-purple-50 hover:pulse">
+              <img class="w-full h-48 object-cover" src="images/VAISH DASHBOARD.png" alt="Real Mart Sales Insights Dashboard Preview">
+              <div class="p-6">
+                <h2 class="text-2xl font-bold text-purple-700 mb-2">Real Mart Sales Insights Dashboard</h2>
+                <p class="text-gray-600 text-sm mb-4">
+                  A Business Intelligence Visualization. Created an interactive sales dashboard to visualize sales metrics, product performance, and regional data trends.
+                </p>
+                <ul class="list-disc ml-5 mt-2 text-gray-600">
+                  <li>Business owners to understand sales patterns</li>
+                  <li>Executives to make strategic decisions</li>
+                  <li>Data storytelling in presentations</li>
+                  <li>Added Filters, bar graphs, pie charts, and KPIs.</li>
+                </ul>
+                <div class="flex justify-between items-center">
+                  <a href="https://drive.google.com/file/d/1j344TggvJkAIR2l9PMJO186LTxxBpk3T/view?usp=sharing" target="_blank" class="text-indigo-500 hover:text-indigo-700 font-semibold">🔗 Drive Link</a>
+                  <a href="https://github.com/vaishragh03" class="text-gray-600 hover:text-black font-semibold">💻 GitHub</a>
+                </div>
+              </div>
+          </div>
+          <div class="col bg rounded-xl shadow-md overflow-hidden transform transition duration-500 hover:scale-105 hover:shadow-2xl hover:bg-purple-50 hover:pulse">
+              <img class="w-full h-48 object-cover" src="images/uts.png" alt="Train Ticket Booking UI (UTS) Preview">
+              <div class="p-6">
+                <h2 class="text-2xl font-bold text-purple-700 mb-2">Train Ticket Booking UI (UTS)</h2>
+                <p class="text-gray-600 text-sm mb-4">
+                  Simplified Railway Booking Interface. A front-end clone of Indian Railways UTS mobile app with emphasis on design, transitions, and intuitive user experience.
+                </p>
+                <ul class="list-disc ml-5 mt-2 text-gray-600">
+                  <li>Practice UI/UX design skills</li>
+                  <li>Portfolio design project</li>
+                  <li>Prototyping for transportation booking systems using figma tool.</li>
+                  <li>Login page, train selection, ticket confirmation screens.</li>
+                </ul>
+                <div class="flex justify-between items-center">
+                  <a href="https://drive.google.com/file/d/1ye8qftm2WcOwte6JQiYREz8Dsd3e4e2V/view?usp=sharing" target="_blank" class="text-indigo-500 hover:text-indigo-700 font-semibold">🔗 Drive Link</a>
+                  <a href="https://github.com/vaishragh03" class="text-gray-600 hover:text-black font-semibold">💻 GitHub</a>
+                </div>
+              </div>
+          </div>
+          <div class="col bg rounded-xl shadow-md overflow-hidden transform transition duration-500 hover:scale-105 hover:shadow-2xl hover:bg-purple-50 hover:pulse">
+              <img class="w-full h-48 object-cover" src="images/em-ginger-fried-img.png" alt="Food Munch – Responsive Restaurant Website Preview">
+              <div class="p-6">
+                <h2 class="text-2xl font-bold text-purple-700 mb-2">Food Munch – Responsive Restaurant Website</h2>
+                <p class="text-gray-600 text-sm mb-4">
+                  Delicious UI for Hungry Users. Food Munch is a fully responsive, modern food ordering website. Designed with clean layouts and intuitive navigation, it provides a seamless browsing experience for food lovers on any device.
+                </p>
+                <ul class="list-disc ml-5 mt-2 text-gray-600">
+                  <li>Restaurants to showcase their menus online</li>
+                  <li>Beginners to learn responsive layout building</li>
+                  <li>Customers to explore dishes before visiting</li>
+                  <li>Hero section with call-to-action.Features section for offers, dishes, and combos
+                      .Responsive design with fluid grid and flexbox.Bootstrap buttons, modals, and cards</li>
+                </ul>
+                <div class="flex justify-between items-center">
+                  <a href=" https://da7dq1v0gqwpn.cloudfront.net/" target="_blank" class="text-indigo-500 hover:text-indigo-700 font-semibold">🔗 View Live</a>
+                  <a href="https://github.com/vaishragh03" class="text-gray-600 hover:text-black font-semibold">💻 GitHub</a>
+                </div>
+              </div>
+          </div>
+          </div>
+       
+        </section>
+
+        <section id="contact" class="bg-purple-100 px-6 py-12 mt-5 m-auto form shadow">
+  <div class="max-w-3xl mx-auto">
+    <h2 class="text-4xl font-extrabold text-center text-purple-800 mb-8">Contact Me</h2>
+    
+    <form action="https://formspree.io/f/yourformid" method="POST" class="bg-white p-6 rounded-xl shadow-md space-y-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <input type="text" name="name" placeholder="Your Name" required
+               class="w-full p-3 border border-purple-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-400 transition" />
+        <input type="email" name="email" placeholder="Your Email" required
+               class="w-full p-3 border border-purple-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-400 transition" />
+      </div>
+      
+      <textarea name="message" rows="5" placeholder="Your Message" required
+                class="w-full p-3 border border-purple-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-400 transition"></textarea>
+      
+      <div class="text-center">
+        <button type="submit"
+                class="bg-purple-600 hover:bg-purple-700 text-white font-semibold px-6 py-3 rounded-lg shadow-md transition">
+          🚀 Send Message
+        </button>
+      </div>
+    </form>
+  </div>
+</section>
+
+<footer class="bg-purple-100  text-black-200 py-8 m-auto mt-5
+">
+  <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+    
+    <!-- Column 1: About -->
+    <div>
+      <h3 class="text-2xl font-semibold mb-2">About Me</h3>
+      <p class="text-sm leading-relaxed">
+        I'm Vaishnavi Raghavan – passionate Web Developer & evolving Vocalist.<br />
+        I blend logic and melody into every creation!
+      </p>
+    </div>
+
+    <!-- Column 2: Quick Links -->
+    <div>
+      <h3 class="text-2xl font-semibold mb-2">Quick Links</h3>
+      <ul class="space-y-2 text-sm">
+        <li><a href="#home" class="hover:underline">Home</a></li>
+        <li><a href="#about" class="hover:underline">About</a></li>
+        <li><a href="#recordings" class="hover:underline">Recordings</a></li>
+        <li><a href="#contact" class="hover:underline">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Column 3: Social & Copyright -->
+    <div>
+      <h3 class="text-2xl font-semibold mb-2">Let's Connect</h3>
+      <div class="flex justify-center md:justify-start space-x-4 mb-4">
+        <a href="https://github.com/vaishragh03" target="_blank" class="hover:text-white text-lg">🐙 GitHub</a>
+        <a href="https://www.linkedin.com/in/vaishnavi-raghavan-/" target="_blank" class="hover:text-white text-lg">🔗 LinkedIn</a>
+      </div>
+      <p class="text-xs">&copy; 2025 Vaishnavi Raghavan. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+
+
+
+    </div>
+      
+    
+    
+  <!--Glow Effect hover-->
+<script>
+  const glow = document.getElementById('glow');
+  document.addEventListener('mousemove', e => {
+    glow.style.left = e.clientX + 'px';
+    glow.style.top = e.clientY + 'px';
+  });
+</script>
+
+<!--scroll progress bar-->
+
+<script>
+  window.onscroll = () => {
+    let progress = document.getElementById("progressBar");
+    let totalHeight = document.body.scrollHeight - window.innerHeight;
+    let progressHeight = (window.scrollY / totalHeight) * 100;
+    progress.style.width = progressHeight + "%";
+  };
+</script>
+
+
+<!--dark light mode-->
+<script>
+const btn = document.getElementById('modeToggle');
+  btn.addEventListener('click', () => {
+    document.body.classList.toggle('dark');
+  });
+</script>
+
+
+
+
+
+</div>
+
+</body>
+
+</html>

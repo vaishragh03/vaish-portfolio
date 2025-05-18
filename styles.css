@@ -1,0 +1,137 @@
+
+body{
+    font-family:  Helvetica, arial, sans-serif;
+    cursor: none;
+}
+.floating-notes {
+    position: fixed;
+    animation: floatUp 3s linear infinite;
+    font-size: 20px;
+    opacity: 0.4;
+    color: #9333EA;
+  }
+
+  @keyframes floatUp {
+    0% { bottom: 0; left: 50vw; right: 50vw; opacity: 0; }
+    50% { opacity: 1; }
+    100% { bottom: 100vh; opacity: 0; }
+  }
+
+.cursor-glow {
+    width: 30px;
+    height: 30px;
+    position: fixed;
+    pointer-events: none;
+    border-radius: 50%;
+    background: radial-gradient(circle, whitesmoke, transparent 80%);
+    mix-blend-mode: overlay;
+    z-index: 1000;
+  }
+
+.coding{
+    width: 25rem;
+    height: 8rem;
+    margin: auto;   
+    justify-items: start;
+}
+
+ body.dark {
+    background-color: #111;
+    color: #eee;
+    a { color: white; }
+
+  }
+
+.profile-pic{
+    width:15vw ;
+    height:20vh ;
+    border: none;
+    justify-items: center;
+    margin: auto;
+    padding: auto;
+
+}
+#typedText::after {
+  content: '|';
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+
+
+.landing-bg-image{
+    background-image: url("images/ChatGPT Image May 14, 2025, 09_19_39 PM.png");
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.gradiented-para{
+    color: white;
+    font-weight:400;
+ 
+    
+    text-shadow: 2px 2px 3px purple;
+}
+.gradiented-para:hover{
+    color:#7E4C74;
+    font-weight: bolder;
+    font-size:xx-large;
+    font-style: italic;
+
+}
+.trans-bckgrd{
+    background-color:#333333;
+    color: white;
+    height: 4rem;
+}
+.para{
+    color: black;
+    font-weight:400;
+    
+    
+}
+
+.ulist{
+    list-style-type:disc;
+}
+.about-bg-image{
+    background-image: linear-gradient(to right,#80008040,#62425b );
+    background-size: cover;
+      height: auto;
+  min-height: 100vh;
+
+}
+.bg-img{
+    width: 15rem;
+    height: 12rem;
+    margin: auto;
+    padding: auto;
+    border-radius: 5px;
+    background-size: cover;
+}
+.video{
+    width: 100%;
+    max-width: 400px;
+    height: 100%;
+    max-height: 300px;
+    background-image: linear-gradient(to right,black,white);
+    border-radius:10px;
+    border-color: black;
+    border-width: 2px;
+}
+
+.form{
+      width: 100%;
+  max-width: 600px;
+  height: auto;
+    border-width: 2px;
+    border-radius:10px;
+    border-color:whitesmoke;
+    
+}
