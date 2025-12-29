@@ -93,7 +93,7 @@
     if (index < text.length) {
       typedText.textContent += text.charAt(index);
       index++;
-      setTimeout(typeChar, 60); // Adjust speed here
+      setTimeout(typeChar, 40); // Adjust speed here
     }
   }
 
@@ -105,7 +105,8 @@
             <h1 class="text-5xl font-bold  text-white linear-gradient-to-r from-purple-600 to-pink-400">VAISHNAVI RAGHAVAN</h1>
 
             <p class="mt-4 text-xl  font-bold gradiented-para">Web Developer by Day, Passionate Vocalist by Soul! 🎶</p>
-            <a href="#about" class="mt-6 bg-white text-purple-600 bg-pink  px-6 py-3 rounded-full font-semibold">Explore My Story</a>
+            <a href="#about" class="mt-6 bg-gray-900 text-gray-200 px-6 py-3 rounded-full font-semibold
+           dark:bg-gray-900 dark:text-gray-200">Explore My Story</a>
         </section>
     </div>
     
@@ -114,9 +115,9 @@
           <div class="row">
             <div>
               <h2 class="text-3xl text-black font-bold text-center mb-4">ABOUT ME</h2>
-              <div class="d-flex flex-row m-auto">
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4 m-auto">
                 <img src="images/Professional Pic.jpg" alt="Profile Picture" class="rounded-lg w-48 md:w-64 mx-auto md:mx-0 shadow-lg">
-                <p class="p-5 para text-xl text-black-800 font-bold">I'm Vaishnavi Raghavan— a dedicated web developer and passionate vocalist. To me, both coding and singing are powerful ways to tell stories; coding creates interactive experiences that connect people, while singing expresses emotion and soul. This portfolio is a blend of my two worlds, showcasing how technology and music come together to reflect who I am. It's a place where my skills and passions intersect, revealing my creativity, dedication, and love for both art and science. As you explore, you'll see how I bring my unique perspective and energy to each project and performance.</p>
+                <p class="para text-xl text-black-800 font-bold">I'm Vaishnavi Raghavan— a dedicated web developer and passionate vocalist. To me, both coding and singing are powerful ways to tell stories; coding creates interactive experiences that connect people, while singing expresses emotion and soul. This portfolio is a blend of my two worlds, showcasing how technology and music come together to reflect who I am. It's a place where my skills and passions intersect, revealing my creativity, dedication, and love for both art and science. As you explore, you'll see how I bring my unique perspective and energy to each project and performance.</p>
                 
               </div>   
             </div>
@@ -154,215 +155,6 @@
           </div>
         </section>
       
-
-        
-
-        <section id="projects" class="p-8 outlined">
-          <h2 class="text-3xl text-center font-bold mb-3">Projects 💻</h2>
-          <p class="text-xl text-center font-semibold mb-6">Here are some of my projects that I developed!</p>
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-5 m-5">
-          <div class="col bg rounded-xl shadow-md overflow-hidden transform transition duration-500 hover:scale-105 hover:shadow-2xl hover:bg-purple-50 hover:pulse">
-              <img class="w-full h-48 object-cover" src="images/library pic.jpg" alt="Library Project Preview">
-              <div class="p-6">
-                <h2 class="text-2xl font-bold text-purple-700 mb-2">Library Management Web App</h2>
-                <p class="text-gray-600 text-sm mb-4">
-                   A Digital Organizer for Book Enthusiasts. A dynamic web app to manage book listings, user operations, and availability status in a virtual library.
-                </p>
-                <ul class="list-disc ml-5 mt-2 text-gray-600">
-                  <li>Used by librarians and students</li>
-                  <li>Built with HTML, CSS, JS</li>
-                  <li>Interactive card-based layout</li>
-                </ul>
-                <div class="flex justify-between items-center">
-                  <a href="https://libmngment.ccbp.tech/" class="text-indigo-500 hover:text-indigo-700 font-semibold">🔗 View Live</a>
-                  <a href="https://github.com/vaishragh03" class="text-gray-600 hover:text-black font-semibold">💻 GitHub</a>
-                </div>
-              </div>
-          </div>
-
-          <div class="col bg rounded-xl shadow-md overflow-hidden transform transition duration-500 hover:scale-105 hover:shadow-2xl hover:bg-purple-50 hover:pulse">
-              <img class="w-full h-48 object-cover" src="images/VAISH DASHBOARD.png" alt="Real Mart Sales Insights Dashboard Preview">
-              <div class="p-6">
-                <h2 class="text-2xl font-bold text-purple-700 mb-2">Real Mart Sales Insights Dashboard</h2>
-                <p class="text-gray-600 text-sm mb-4">
-                  A Business Intelligence Visualization. Created an interactive sales dashboard to visualize sales metrics, product performance, and regional data trends.
-                </p>
-                <ul class="list-disc ml-5 mt-2 text-gray-600">
-                  <li>Business owners to understand sales patterns</li>
-                  <li>Executives to make strategic decisions</li>
-                  <li>Data storytelling in presentations</li>
-                  <li>Added Filters, bar graphs, pie charts, and KPIs.</li>
-                </ul>
-                <div class="flex justify-between items-center">
-                  <a href="https://drive.google.com/file/d/1j344TggvJkAIR2l9PMJO186LTxxBpk3T/view?usp=sharing" target="_blank" class="text-indigo-500 hover:text-indigo-700 font-semibold">🔗 Drive Link</a>
-                  <a href="https://github.com/vaishragh03" class="text-gray-600 hover:text-black font-semibold">💻 GitHub</a>
-                </div>
-              </div>
-          </div>
-          <div class="col bg rounded-xl shadow-md overflow-hidden transform transition duration-500 hover:scale-105 hover:shadow-2xl hover:bg-purple-50 hover:pulse">
-              <img class="w-full h-48 object-cover" src="images/uts.png" alt="Train Ticket Booking UI (UTS) Preview">
-              <div class="p-6">
-                <h2 class="text-2xl font-bold text-purple-700 mb-2">Train Ticket Booking UI (UTS)</h2>
-                <p class="text-gray-600 text-sm mb-4">
-                  Simplified Railway Booking Interface. A front-end clone of Indian Railways UTS mobile app with emphasis on design, transitions, and intuitive user experience.
-                </p>
-                <ul class="list-disc ml-5 mt-2 text-gray-600">
-                  <li>Practice UI/UX design skills</li>
-                  <li>Portfolio design project</li>
-                  <li>Prototyping for transportation booking systems using figma tool.</li>
-                  <li>Login page, train selection, ticket confirmation screens.</li>
-                </ul>
-                <div class="flex justify-between items-center">
-                  <a href="https://drive.google.com/file/d/1ye8qftm2WcOwte6JQiYREz8Dsd3e4e2V/view?usp=sharing" target="_blank" class="text-indigo-500 hover:text-indigo-700 font-semibold">🔗 Drive Link</a>
-                  <a href="https://github.com/vaishragh03" class="text-gray-600 hover:text-black font-semibold">💻 GitHub</a>
-                </div>
-              </div>
-          </div>
-          <div class="col bg rounded-xl shadow-md overflow-hidden transform transition duration-500 hover:scale-105 hover:shadow-2xl hover:bg-purple-50 hover:pulse">
-              <img class="w-full h-48 object-cover" src="images/Task Manager.png" alt="Vaish Task Manager">
-              <div class="p-6">
-                <h2 class="text-2xl font-bold text-purple-700 mb-2">Task Manager</h2>
-                <p class="text-gray-600 text-sm mb-4">
-                  Implemented a fully responsive task management app using ReactJS and JavaScript.
-                </p>
-                <ul class="list-disc ml-5 mt-2 text-gray-600">
-                  <li>To perform daily tasks</li>
-                  <li>Keep tracking of task status</li>
-                  <li>Deployed on Netlify</li>
-                  <li>It features CRUD operations and a user-friendly UI</li>
-                </ul>
-                <div class="flex justify-between items-center">
-                  <a href="https://vaish-task-manager.netlify.app/" target="_blank" class="text-indigo-500 hover:text-indigo-700 font-semibold">🔗 View Live</a>
-                  <a href="https://github.com/vaishragh03/task-manager" class="text-gray-600 hover:text-black font-semibold">💻 GitHub</a>
-                </div>
-              </div>
-          </div>
-
-          <div class="col bg rounded-xl shadow-md overflow-hidden transform transition duration-500 hover:scale-105 hover:shadow-2xl hover:bg-purple-50 hover:pulse">
-              <img class="w-full h-48 object-cover" src="images/Screen Recorder.png" alt="Screen Recorder">
-              <div class="p-6">
-                <h2 class="text-2xl font-bold text-purple-700 mb-2">Screen Recorder</h2>
-                <p class="text-gray-600 text-sm mb-4">
-                  Designed and deployed interactive screen recorder apps. To Record our screen and to take pictures. Act as usual screen Recorder with filters. 
-                </p>
-                <ul class="list-disc ml-5 mt-2 text-gray-600">
-                  <li>To Record our screen and to take pictures. Act as usual screen Recorder with filters</li>
-                  <li>Keep tracking of task status</li>
-                  <li>Deployed on Vercel</li>
-                  <li>Applied frontend best practices using ReactJS,Tailwind, and Bootstrap CSS</li>
-                </ul>
-                <div class="flex justify-between items-center">
-                  <a href="https://screen-recorder-project.vercel.app/" target="_blank" class="text-indigo-500 hover:text-indigo-700 font-semibold">🔗 View Live</a>
-                  <a href="https://github.com/vaishragh03/Screen-Recorder-Project" class="text-gray-600 hover:text-black font-semibold">💻 GitHub</a>
-                </div>
-              </div>
-          </div>
-
-          <div class="col bg rounded-xl shadow-md overflow-hidden transform transition duration-500 hover:scale-105 hover:shadow-2xl hover:bg-purple-50 hover:pulse">
-              <img class="w-full h-48 object-cover" src="images/weather.png" alt="Weather Application">
-              <div class="p-6">
-                <h2 class="text-2xl font-bold text-purple-700 mb-2">Screen Recorder</h2>
-                <p class="text-gray-600 text-sm mb-4">
-                  Designed and deployed interactive screen recorder apps. To Record our screen and to take pictures. Act as usual screen Recorder with filters. 
-                </p>
-                <ul class="list-disc ml-5 mt-2 text-gray-600">
-                  <li>To get to know the weather of cities</li>
-                  <li>Basic Weather Application</li>
-                  <li>Deployed on Vercel</li>
-                  <li>Shows humidity and wind speed</li>
-                </ul>
-                <div class="flex justify-between items-center">
-                  <a href="https://weather-application-one-nu.vercel.app/" target="_blank" class="text-indigo-500 hover:text-indigo-700 font-semibold">🔗 View Live</a>
-                  <a href="https://github.com/vaishragh03/weather-application" class="text-gray-600 hover:text-black font-semibold">💻 GitHub</a>
-                </div>
-              </div>
-          </div>
-
-          <div class="col bg rounded-xl shadow-md overflow-hidden transform transition duration-500 hover:scale-105 hover:shadow-2xl hover:bg-purple-50 hover:pulse">
-              <img class="w-full h-48 object-cover" src="images/BankLite.png" alt="BankLite System">
-              <div class="p-6">
-                <h2 class="text-2xl font-bold text-purple-700 mb-2">BankLite</h2>
-                <p class="text-gray-600 text-sm mb-4">
-                 BankLite is a Console banking application
-                </p>
-                <ul class="list-disc ml-5 mt-2 text-gray-600">
-                  <li>Build to perform banking operations</li>
-                  <li>Console based system build using python and OOPs concept</li>
-                  <li>Performs basic operation like depositing,withdrawal,transaction management and more</li>
-                 
-                </ul>
-                <div class="flex justify-between items-center">
-                  <a href="https://colab.research.google.com/drive/1ukbn6phmHLvOCGUPmuM5m4W61WYJiQpZ?usp=sharing" target="_blank" class="text-indigo-500 hover:text-indigo-700 font-semibold">🔗 Drive Link</a>
-                  <a href="https://github.com/vaishragh03/Banklite-Project" class="text-gray-600 hover:text-black font-semibold">💻 GitHub</a>
-                </div>
-              </div>
-          </div>
-
-          <div class="col bg rounded-xl shadow-md overflow-hidden transform transition duration-500 hover:scale-105 hover:shadow-2xl hover:bg-purple-50 hover:pulse">
-              <img class="w-full h-48 object-cover" src="images/MCP.png" alt="MCP-LPG">
-              <div class="p-6">
-                <h2 class="text-2xl font-bold text-purple-700 mb-2">MCP- Learning Path Generator</h2>
-                <p class="text-gray-600 text-sm mb-4">
-                 MCP‑LPG is a Learning Path Generator;it
-acts as a server that an AI client can call to generate structured learning paths for a given topic.
-                </p>
-                <ul class="list-disc ml-5 mt-2 text-gray-600">
-                  <li>Built around the Model Context Protocol (MCP)</li>
-                  <li>Built using Python, Py- libraries</li>
-                  <li>Used platforms are Google colab notebook - to run, Streamlit to deploy</li>
-                 
-                </ul>
-                <div class="flex justify-between items-center">
-                  <a href="https://mcp-lpg-25.streamlit.app/" target="_blank" class="text-indigo-500 hover:text-indigo-700 font-semibold">🔗 View Live</a>
-                  <a href="https://github.com/vaishragh03/MCP-LPG" class="text-gray-600 hover:text-black font-semibold">💻 GitHub</a>
-                </div>
-              </div>
-          </div>
-
-           <div class="col bg rounded-xl shadow-md overflow-hidden transform transition duration-500 hover:scale-105 hover:shadow-2xl hover:bg-purple-50 hover:pulse">
-              <img class="w-full h-48 object-cover" src="images/ResumeChecker.png" alt="ResumeChecker">
-              <div class="p-6">
-                <h2 class="text-2xl font-bold text-purple-700 mb-2">ResumeChecker_Agent</h2>
-                <p class="text-gray-600 text-sm mb-4">
-                 Automated AI-powered resume evaluation system. Users submit resume links via Telegram bot, get instant ATS-friendly evaluation reports emailed, with real-time Telegram updates.
-                </p>
-                <ul class="list-disc ml-5 mt-2 text-gray-600">
-                  <li>Used Telegram Bot as User Interface</li>
-                  <li>Built with Make.com</li>
-                  <li>Evaluated Resume would automatically sent to corresponded mail id.</li>
-                 
-                </ul>
-                <div class="flex justify-between items-center">
-                  <a href="https://drive.google.com/file/d/1ZNJfm4cjUnw6_3LdAMe5KIwoOq1JKBNe/view?usp=sharing" target="_blank" class="text-indigo-500 hover:text-indigo-700 font-semibold">🔗 Drive Link</a>
-                  <a href="https://github.com/vaishragh03/ResumeChecker_Agent" class="text-gray-600 hover:text-black font-semibold">💻 GitHub</a>
-                </div>
-              </div>
-          </div>
-
-
-          <div class="col bg rounded-xl shadow-md overflow-hidden transform transition duration-500 hover:scale-105 hover:shadow-2xl hover:bg-purple-50 hover:pulse">
-              <img class="w-full h-48 object-cover" src="images/em-ginger-fried-img.png" alt="Food Munch – Responsive Restaurant Website Preview">
-              <div class="p-6">
-                <h2 class="text-2xl font-bold text-purple-700 mb-2">Food Munch – Responsive Restaurant Website</h2>
-                <p class="text-gray-600 text-sm mb-4">
-                  Delicious UI for Hungry Users. Food Munch is a fully responsive, modern food ordering website. Designed with clean layouts and intuitive navigation, it provides a seamless browsing experience for food lovers on any device.
-                </p>
-                <ul class="list-disc ml-5 mt-2 text-gray-600">
-                  <li>Restaurants to showcase their menus online</li>
-                  <li>Beginners to learn responsive layout building</li>
-                  <li>Customers to explore dishes before visiting</li>
-                  <li>Hero section with call-to-action.Features section for offers, dishes, and combos
-                      .Responsive design with fluid grid and flexbox.Bootstrap buttons, modals, and cards</li>
-                </ul>
-                <div class="flex justify-between items-center">
-                  <a href=" https://da7dq1v0gqwpn.cloudfront.net/" target="_blank" class="text-indigo-500 hover:text-indigo-700 font-semibold">🔗 View Live</a>
-                  <a href="https://github.com/vaishragh03" class="text-gray-600 hover:text-black font-semibold">💻 GitHub</a>
-                </div>
-              </div>
-          </div>
-          </div>
-       
-        </section>
 
         <section id="recordings" class="p-8 object-cover">
           <h2 class="text-3xl text-center font-bold mb-3">🎵 My Recordings</h2>
@@ -518,20 +310,105 @@ acts as a server that an AI client can call to generate structured learning path
           
         </section>
 
+        <section id="projects" class="p-8 outlined">
+          <h2 class="text-3xl text-center font-bold mb-3">Projects 💻</h2>
+          <p class="text-xl text-center font-semibold mb-6">Here are some of my projects that I developed!</p>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-5 m-5">
+          <div class="col bg rounded-xl shadow-md overflow-hidden transform transition duration-500 hover:scale-105 hover:shadow-2xl hover:bg-purple-50 hover:pulse">
+              <img class="w-full h-48 object-cover" src="images/library pic.jpg" alt="Library Project Preview">
+              <div class="p-6">
+                <h2 class="text-2xl font-bold text-purple-700 mb-2">Library Management Web App</h2>
+                <p class="text-gray-600 text-sm mb-4">
+                   A Digital Organizer for Book Enthusiasts. A dynamic web app to manage book listings, user operations, and availability status in a virtual library.
+                </p>
+                <ul class="list-disc ml-5 mt-2 text-gray-600">
+                  <li>Used by librarians and students</li>
+                  <li>Built with HTML, CSS, JS</li>
+                  <li>Interactive card-based layout</li>
+                </ul>
+                <div class="flex justify-between items-center">
+                  <a href="https://libmngment.ccbp.tech/" target="_blank" class="text-indigo-500 hover:text-indigo-700 font-semibold">🔗 View Live</a>
+                  <a href="https://github.com/vaishragh03" target="_blank" class="text-gray-600 hover:text-black font-semibold">💻 GitHub</a>
+                </div>
+              </div>
+          </div>
+
+          <div class="col bg rounded-xl shadow-md overflow-hidden transform transition duration-500 hover:scale-105 hover:shadow-2xl hover:bg-purple-50 hover:pulse">
+              <img class="w-full h-48 object-cover" src="images/VAISH DASHBOARD.png" alt="Real Mart Sales Insights Dashboard Preview">
+              <div class="p-6">
+                <h2 class="text-2xl font-bold text-purple-700 mb-2">Real Mart Sales Insights Dashboard</h2>
+                <p class="text-gray-600 text-sm mb-4">
+                  A Business Intelligence Visualization. Created an interactive sales dashboard to visualize sales metrics, product performance, and regional data trends.
+                </p>
+                <ul class="list-disc ml-5 mt-2 text-gray-600">
+                  <li>Business owners to understand sales patterns</li>
+                  <li>Executives to make strategic decisions</li>
+                  <li>Data storytelling in presentations</li>
+                  <li>Added Filters, bar graphs, pie charts, and KPIs.</li>
+                </ul>
+                <div class="flex justify-between items-center">
+                  <a href="https://drive.google.com/file/d/1j344TggvJkAIR2l9PMJO186LTxxBpk3T/view?usp=sharing" target="_blank" class="text-indigo-500 hover:text-indigo-700 font-semibold">🔗 Drive Link</a>
+                  <a href="https://github.com/vaishragh03" target="_blank" class="text-gray-600 hover:text-black font-semibold">💻 GitHub</a>
+                </div>
+              </div>
+          </div>
+          <div class="col bg rounded-xl shadow-md overflow-hidden transform transition duration-500 hover:scale-105 hover:shadow-2xl hover:bg-purple-50 hover:pulse">
+              <img class="w-full h-48 object-cover" src="images/uts.png" alt="Train Ticket Booking UI (UTS) Preview">
+              <div class="p-6">
+                <h2 class="text-2xl font-bold text-purple-700 mb-2">Train Ticket Booking UI (UTS)</h2>
+                <p class="text-gray-600 text-sm mb-4">
+                  Simplified Railway Booking Interface. A front-end clone of Indian Railways UTS mobile app with emphasis on design, transitions, and intuitive user experience.
+                </p>
+                <ul class="list-disc ml-5 mt-2 text-gray-600">
+                  <li>Practice UI/UX design skills</li>
+                  <li>Portfolio design project</li>
+                  <li>Prototyping for transportation booking systems using figma tool.</li>
+                  <li>Login page, train selection, ticket confirmation screens.</li>
+                </ul>
+                <div class="flex justify-between items-center">
+                  <a href="https://drive.google.com/file/d/1ye8qftm2WcOwte6JQiYREz8Dsd3e4e2V/view?usp=sharing" target="_blank" class="text-indigo-500 hover:text-black font-semibold">🔗 Drive Link</a>
+                  <a href="https://github.com/vaishragh03" target="_blank" class="text-gray-600 hover:text-black font-semibold">💻 GitHub</a>
+                </div>
+              </div>
+          </div>
+          <div class="col bg rounded-xl shadow-md overflow-hidden transform transition duration-500 hover:scale-105 hover:shadow-2xl hover:bg-purple-50 hover:pulse">
+              <img class="w-full h-48 object-cover" src="images/em-ginger-fried-img.png" alt="Food Munch – Responsive Restaurant Website Preview">
+              <div class="p-6">
+                <h2 class="text-2xl font-bold text-purple-700 mb-2">Food Munch – Responsive Restaurant Website</h2>
+                <p class="text-gray-600 text-sm mb-4">
+                  Delicious UI for Hungry Users. Food Munch is a fully responsive, modern food ordering website. Designed with clean layouts and intuitive navigation, it provides a seamless browsing experience for food lovers on any device.
+                </p>
+                <ul class="list-disc ml-5 mt-2 text-gray-600">
+                  <li>Restaurants to showcase their menus online</li>
+                  <li>Beginners to learn responsive layout building</li>
+                  <li>Customers to explore dishes before visiting</li>
+                  <li>Hero section with call-to-action.Features section for offers, dishes, and combos
+                      .Responsive design with fluid grid and flexbox.Bootstrap buttons, modals, and cards</li>
+                </ul>
+                <div class="flex justify-between items-center">
+                  <a href=" https://da7dq1v0gqwpn.cloudfront.net/" target="_blank" class="text-indigo-500 hover:text-indigo-700 font-semibold">🔗 View Live</a>
+                  <a href="https://github.com/vaishragh03" target="_blank" class="text-gray-600 hover:text-black font-semibold">💻 GitHub</a>
+                </div>
+              </div>
+          </div>
+          </div>
+       
+        </section>
+
         <section id="contact" class="bg-purple-100 px-6 py-12 mt-5 m-auto form shadow">
   <div class="max-w-3xl mx-auto">
     <h2 class="text-4xl font-extrabold text-center text-purple-800 mb-8">Contact Me</h2>
     
-    <form action="https://formspree.io/f/yourformid" method="POST" class="bg-white p-6 rounded-xl shadow-md space-y-6">
+    <form action="https://docs.google.com/forms/d/1pHK2OUT63zB7Bpz-SodVFyalsDs-n0b-C3AXPpwtkN8/" method="POST" class="bg-white p-6 rounded-xl shadow-md space-y-6">
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
         <input type="text" name="name" placeholder="Your Name" required
-               class="w-full p-3 border border-purple-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-400 transition" />
+               class="w-full p-3 border border-purple-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-400 transition text-white" />
         <input type="email" name="email" placeholder="Your Email" required
-               class="w-full p-3 border border-purple-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-400 transition" />
+               class="w-full p-3 border border-purple-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-400 transition text-white" />
       </div>
       
       <textarea name="message" rows="5" placeholder="Your Message" required
-                class="w-full p-3 border border-purple-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-400 transition"></textarea>
+                class="w-full p-3 border border-purple-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-400 transition text-white"></textarea>
       
       <div class="text-center">
         <button type="submit"
@@ -543,8 +420,7 @@ acts as a server that an AI client can call to generate structured learning path
   </div>
 </section>
 
-<footer class="bg-purple-100  text-black-200 py-8 m-auto mt-5
-">
+<footer class="bg-purple-100  text-black-200 py-8 m-auto mt-5 dark:bg-gray-900 dark:text-gray-200">
   <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
     
     <!-- Column 1: About -->
@@ -560,10 +436,10 @@ acts as a server that an AI client can call to generate structured learning path
     <div>
       <h3 class="text-2xl font-semibold mb-2">Quick Links</h3>
       <ul class="space-y-2 text-sm">
-        <li><a href="#home" class="hover:underline">Home</a></li>
-        <li><a href="#about" class="hover:underline">About</a></li>
-        <li><a href="#recordings" class="hover:underline">Recordings</a></li>
-        <li><a href="#contact" class="hover:underline">Contact</a></li>
+        <li><a href="#home" class="hover:underline text-purple-100 dark:text-purple-300">Home</a></li>
+        <li><a href="#about" class="hover:underline text-purple-100 dark:text-purple-300">About</a></li>
+        <li><a href="#recordings" class="hover:underline text-purple-100 dark:text-purple-300">Recordings</a></li>
+        <li><a href="#contact" class="hover:underline text-purple-100 dark:text-purple-300">Contact</a></li>
       </ul>
     </div>
 
